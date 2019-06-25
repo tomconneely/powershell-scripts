@@ -80,6 +80,11 @@ Function Write-Log {
     }
 }
 
+Function test-run {
+    return 5;
+}
+
 Export-ModuleMember -Function Write-HostTextWithNewLine
 Export-ModuleMember -Function Confirm-ModuleInstalled
 Export-ModuleMember -Function Write-Log
+Export-ModuleMember -Function test-run
