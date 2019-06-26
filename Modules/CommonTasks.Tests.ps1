@@ -1,7 +1,7 @@
 Import-Module $PSScriptRoot\CommonTasks.psm1 -Force
 #. $PSScriptRoot\CommonTasks.psm1
 
-Describe 'CommonTaks' {
+Describe 'CommonTasks' {
     Context 'Write-HostTextWithNewLine' {
 
     }

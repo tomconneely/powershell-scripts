@@ -1,3 +1,25 @@
+<#
+    .SYNOPSIS
+        Writes text to host and includes a new line underneath
+
+    .DESCRIPTION
+        Writes text to host and includes a new line underneath
+
+    .PARAMETER Text
+        Text to be written
+        
+    .INPUTS
+        None. You cannot pipe objects to Write-HostTextWithNewLine
+
+    .OUTPUTS
+        None. Write-HostTextWithNewLine does not generate any output.
+
+    .EXAMPLE
+        Write-HostTextWithNewLine "Text to write"
+        
+    .EXAMPLE
+        Write-HostTextWithNewLine -Text "Text to write"
+#>
 Function Write-HostTextWithNewLine {
     param (
         [Parameter(Mandatory = $True, HelpMessage =
