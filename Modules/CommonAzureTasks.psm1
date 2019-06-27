@@ -47,6 +47,23 @@ Function Set-SubscriptionIfNotActive {
     }
 }
 
+<#
+    .SYNOPSIS
+        Login to Azure if session is not already logged in    
+
+    .DESCRIPTION
+        Login to Azure if session is not already logged in. The prompt will be displayed if not logged in, otherwise the script will continue
+
+    .INPUTS
+        None. You cannot pipe objects to Connect-ToAzureIfNecessary
+
+    .OUTPUTS
+        None. Connect-ToAzureIfNecessary does not generate any output.
+
+    .EXAMPLE
+        Set-SubscriptionIfNotActive "Subscription Name"
+        
+#>
 Function Connect-ToAzureIfNecessary {
     # Check if user is logged into Azure already
     if ([string]::IsNullOrEmpty($(Get-AzContext).Account)) {
