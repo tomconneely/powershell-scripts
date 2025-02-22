@@ -1,0 +1,3 @@
+$databaseName = "Test"
+
+get-azurermDatabase
